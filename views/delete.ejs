@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bookcase App</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- <script src="../node_modules/jquery/dist/jquery.min.js"></script> -->
+  </head>
+
+  <body>
+    <div class="loginAdd">
+      <div class="addBook">
+        <br />
+        <br />
+        <h1>Deleting Form</h1>
+        <br />
+        <br />
+
+        <form
+          action="/books/delete"
+          method="POST"
+          class="form-group form-inline"
+        >
+   
+          <div class="form-group mb-2">
+            <label for="name">Book: </label>
+            <select name="name" class="form-control">
+              <% books.forEach(book => { %>
+              <option value=<%=book.name%>><%=book.name%></option>
+              <% }) %>
+            </select>
+          </div>
+          <br>
+          <div class="form-group mb-2">
+            <label for="author">Author: </label>
+            <select name="author" class="form-control">
+              <% books.forEach(book => { %>
+              <option value=<%=book.author%>><%=book.author%></option>
+              <% }) %>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-danger signUpSubmitBtn">
+            Delete
+          </button>
+          <a href="/books" class="btn btn-secondary cancelBtn">Back</a>
+        </form>
+      </div>
+    </div>
+   
+  </body>
+</html>

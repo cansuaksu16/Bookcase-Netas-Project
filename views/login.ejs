@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bookcase App</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="/css/index.css" />
+  </head>
+
+  <body>
+    <div class="loginAdd">
+      <img class="bookIcon" src="images/book-icon.png" />
+      <h3>Welcome to your online Bookcase!</h3>
+    
+      <h5>Please sign in to continue!</h5>
+    <br>
+      <div class="addBook">
+          <form class="form-group form-inline" method="POST" action="/login" >
+
+              <div class="form-group mb-2">
+                <label>Email: </label>
+                <input type="email" class="form-control" name="email" />
+              </div>
+      
+              <div class="form-group mb-2">
+                <label>Password: </label>
+                <input type="password" class="form-control" name="password" />
+              </div>
+      
+              <!-- <a href="/books" type="submit" class="btn btn-success loginBtn">Login -->
+              <button type="submit" class="btn btn-success loginBtn">Login</button>
+              </a>
+            </form>
+      </div>
+      
+    </div>
+    <div id="signUp">
+      <h4>Don't have an account?</h4>
+      <a href="/signup" id="signUpBtn">Sign up now!</a>
+    </div>
+  </div>
+  </body>
+</html>

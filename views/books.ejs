@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bookcase App</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="/css/index.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="booksPage" class="container">
+      <div class="row">
+        <div id="currentlyReading" class="col-md-4">
+          <h2>Currently Reading</h2>
+          <% createList("1") %>
+        </div>
+
+        <div id="willRead" class="col-md-4">
+          <h2>Will Read</h2>
+          <% createList("2") %>
+        </div>
+
+        <div id="haveRead" class="col-md-4">
+          <h2>Have Read</h2>
+          <% createList("3") %>
+        </div>
+      </div>
+    </div>
+    <a href="/books/add" id="add" class="btn btn-success addBtn"> + </a>
+
+    <a href="/books/delete" id="delete" class="btn btn-danger deleteBtn">-</a>
+
+    <a href="/logout" class="btn btn-danger cancelBtn">Logout</a>
+
+    <% function createList(list) { %>
+    <ol>
+      <% books.forEach( book => { %> <% if(book.list == list) {%>
+      <li><%= book.name %> , <%= book.author %></li>
+      <% } %> <% }) %>
+    </ol>
+    <% } %>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+.bookIcon {
+  width: 200px;
+  margin-top: 20px;
+}
+
+.bookIcon2 {
+  width: 200px;
+}
+
+.loginAdd {
+  border: 3px #d95f3d solid;
+  height: 450px;
+  width: 600px;
+  text-align: center;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+}
+
+#signUp {
+  width: 100%;
+  position: fixed;
+  bottom: 60px;
+  text-align: center;
+}
+
+label {
+  width: 120px;
+  text-align: left;
+}
+
+.loginBtn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+#signUpForm {
+  border: 3px #d95f3d solid;
+  height: 450px;
+  width: 600px;
+  text-align: center;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+  padding-top: 30px;
+}
+
+.signUpSubmitBtn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+#booksPage > .row {
+  margin-top: 5%;
+  height: 90%;
+}
+
+.cancelBtn {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+#booksPage {
+  border: 2px #d95f3d solid;
+  height: 80%;
+  margin-top: 3%;
+  overflow-y: auto;
+}
+
+.addBtn,
+.deleteBtn {
+  position: relative;
+  left: 50%;
+}
+
+.addBook {
+  margin: 0 auto;
+  width: 60%; /* value of your choice which suits your alignment */
+}
+
+#booksPage {
+  overflow: auto;
+}
+.errorDiv {
+  margin-top: 20%;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bookcase App</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="/css/index.css" />
+  </head>
+
+  <div class="loginAdd form-group form-inline">
+      <div class="addBook">
+            <img class="bookIcon2" src="images/book-icon.png" />
+
+      <h4>Please fill the form below.</h4>
+      <form action="/signup" method="POST">
+        <div class="form-group mb-2">
+          <label>Name: </label> <input name="username" type="text" class="form-control" /> <br />
+        </div>
+
+        <div class="form-group mb-2">
+          <label>Email: </label> <input name="email" type="email"  class="form-control" /> <br />
+        </div>
+
+        <div class="form-group mb-2">
+          <label>Password: </label> <input name="password" type="password"  class="form-control" /> <br />
+        </div>
+
+        <div class="form-group mb-2">
+            <label>Password Again: </label> <input name="passwordConf" type="password"  class="form-control" /> <br />
+        </div>
+
+        <button type="submit" class="btn btn-primary signUpSubmitBtn">
+          Sign Up
+        </button>
+
+        <a href="/" class="btn btn-primary cancelBtn">Cancel</a>
+      </form>
+    </div>
+</div>
+  </body>
+</html>
